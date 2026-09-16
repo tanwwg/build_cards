@@ -1,2 +1,3 @@
 augment/
 .venv/
+.DS_Store
