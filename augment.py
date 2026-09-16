@@ -84,6 +84,6 @@ if __name__ == "__main__":
     print(f"Found {len(source_files)} PNG files in {images_dir}", flush=True)
     for index, source_file in enumerate(source_files, start=1):
         print(f"Processing file {index}/{len(source_files)}: {source_file.name}", flush=True)
-        augment_card(source_file, output_dir / source_file.stem, count=50)
+        augment_card(source_file, output_dir / source_file.stem, count=200)
 
     print(f"Finished processing {len(source_files)} PNG files into {output_dir}", flush=True)
