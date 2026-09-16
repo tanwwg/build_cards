@@ -24,6 +24,7 @@ On Mac, we should convert the tflite model to an ML package.
     source .venv/bin/activate
 
     pip install coremltools tensorflow
+    python convert_coreml.py
     
 
     
