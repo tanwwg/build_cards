@@ -13,6 +13,7 @@ EPOCHS = 5
 
 MODEL_FILE = "build\\pokemon_cards.tflite"
 LABELS_FILE = "build\\labels.txt"
+KERAS_MODEL_FILE = "build\\pokemon_cards.keras"
 
 # -----------------------------
 # Load dataset
@@ -106,6 +107,11 @@ with open(LABELS_FILE, "w", encoding="utf-8") as f:
         f.write(name + "\n")
 
 print(f"\nSaved labels to {LABELS_FILE}")
+
+### save keras file
+
+model.save(KERAS_MODEL_FILE)
+print(f"Saved Keras model to {KERAS_MODEL_FILE}")
 
 # -----------------------------
 # Convert to TensorFlow Lite
